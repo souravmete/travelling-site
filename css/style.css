@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,300;1,400&family=Roboto+Slab&display=swap');
+
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+
+html {
+    /* font-size: 10px; */
+    /* 16px=100%
+    10px=(100/16*)10 */
+    /* =62.5%  */
+    font-size: 62.5%;
+}
+
+/* home page styling starts  */
+/* setting background image  */
+
+.header {
+    height: 97vh;
+    background: url('../img/header-image.jpg');
+    background-position: center;
+    position: relative;
+}
+
+
+
+/* nav bar styling starts  */
+
+/* ############## utility class ######### */
+#bg-dark {
+    background-color: #263238;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.sm-heading {
+    font-size: 1.5rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: rgb(15, 14, 14);
+}
+
+.text-grey {
+    color: rgba(64, 62, 62, 0.908);
+}
+
+/*########### utility claasss ends ########### */
+
+.navbar {
+    /* border:2px solid red; */
+    padding: 0.5rem;
+    padding-bottom: 0rem;
+    background-color: rgb(51 51 51 / 18%);
+}
+
+
+.navbar .logo {
+    float: left;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+
+
+}
+
+.navbar .logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 1rem;
+    margin-right: 4rem;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    margin: 1.3rem;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar .nav-item:hover {
+    border-bottom: 2px solid white;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: rgba(0, 229, 255, 0.898);
+}
+
+.nav-items a #active:active {
+    color: rgb(207, 207, 224);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.6em;
+    margin-top: 0.2em;
+    letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+}
+
+/* ####### navbar styling ends ######### */
+
+
+
+
+/* ########### header content starts ########### */
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -60%);
+    cursor: pointer;
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+
+/*####### utility class of button start #######*/
+
+.btn-primary {
+    background-color: #f4f4f443;
+    border-radius: 20em;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/*######### utility class of button end ######### */
+
+/* ########### header content end ########### */
+
+
+
+/* ########### showcase section styling ############# */
+.showcase {
+    background-color: rgba(130, 121, 121, 0.278);
+    padding: 10rem;
+}
+
+.row {
+    box-shadow: 0px 0px 25px 0 rgb(120, 117, 117);
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.919);
+    border-radius: 3px;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+
+}
+
+.row .text-box {
+    padding: 2rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-secondary {
+    border: 2px solid red;
+    border-radius: 2.8rem;
+    color: red;
+    background-color: white;
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+    transform: scale(1);
+    background-color: #cfcdcc37;
+}
+
+/* ########## showcase styling end ###########  */
+
+
+/*######### feature styling starts  ########*/
+.container-1 {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.features {
+    padding: 10rem 0;
+}
+
+.box-wapper {
+    box-shadow: 0px 0px 25px 0 rgb(120, 117, 117);
+
+}
+
+.box {
+    width: 33.333%;
+    float: left;
+
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box-1,
+.box-3 {
+    background-color: #263238;
+    color: white;
+}
+
+.box-2 {
+    background-color: #f54538;
+    color: white;
+}
+
+.box-wapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*###### feature styling end  #######*/
+
+/*###### footer styling starts  ######*/
+.footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.copy-right-reserve {
+    padding-top: 1.5rem;
+}
+
+.fab {
+    padding-right: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
+
+/*###### footer styling ends ######*/
+
+/*######## home page styling ends ####### */
+
+
+/*####### ABOUT PAGE STYLING STARTS ########*/
+
+.about {
+    padding: 8rem 0;
+}
+
+.container-2 {
+    max-width: 950px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/* .about-heading{
+    border-bottom: 6px solid red;
+
+} */
+
+.about-heading::after {
+    content: "";
+    display: block;
+    border: 2px solid red;
+    width: 100%;
+}
+
+/* #######about-wrapper styling starts ######## */
+.about {
+    background-color: rgba(200, 190, 190, 0.105);
+    height: 100vh;
+}
+
+.about-wrapper {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.about-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before {
+    content: "\2713";
+    color: red;
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right {
+    float: right;
+    width: 50%;
+}
+
+/* #######about-wrapper styling  ends######## */
+
+
+
+/* ####### counts styling  Starts######## */
+.counts {
+    margin-top: 5rem;
+}
+
+.count-items {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.count-items span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.count-items p {
+    font-weight: 600;
+    color: rgb(76, 72, 72);
+}
+
+/* ####### counts styling  ends######## */
+
+
+/* ####### cta-banner styling  starts######## */
+
+.cta-banner {
+    background: linear-gradient(to top, #ff3399 35%, #ff6666 99%);
+    color: white;
+    padding: 3.0rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+    border-radius: 3px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.cta-line {
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin-top: 1.7rem;
+    margin-left: 4rem;
+}
+
+.cta-btn {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 3px solid white;
+    padding: 0.2em 2.3em;
+    letter-spacing: 0.2em;
+    border-radius: 30px;
+    color: #f4f4f4;
+}
+
+.cta-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.cta-banner-left {
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right {
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin-top: 0.8rem;
+    margin-right: 4rem;
+}
+
+.cta-banner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ####### cta-banner styling  ends######## */
+
+
+
+
+/*############ Contat page styling starts ############# */
+.contact-form {
+    padding: 5em 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper {}
+
+.form-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address {
+    background: #fff;
+    border-radius: 2px;
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    height: 760px;
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+}
+
+/* form styling  */
+.form-wrapper .form {
+    font-size: 1.6rem;
+    background: #fff;
+    float: right;
+    width: 49%;
+    padding: 1rem;
+    height: 760px;
+    border-radius: 2px;
+}
+
+.form h1::after {
+    content: "";
+    display: block;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.form-wrapper label {
+    display: block;
+
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after {
+    content: "*";
+    color: red;
+
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    text-transform: uppercase;
+    background-color: #f41225;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+
+}
+
+/*############ Contat page styling starts ############# */
+
+/*####### ABOUT PAGE STYLING ENDS ########*/
+
+
+
+
+/*######### media queries starts ########*/
+
+@media (max-width:500px) {
+    html {
+        font-size: 50%;
+        width: 100%;
+
+    }
+
+    p {
+        font-size: 1.8rem;
+
+    }
+
+    /* navbar  */
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+
+    }
+
+    /* homepage  */
+
+    .header-content .main-heading {
+        display: none;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .text-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .showcase {
+        padding: 2px;
+    }
+
+    .row1 {
+        margin-top: 10rem;
+    }
+
+
+
+    .box-wapper .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .box-wapper .box-1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .box-wapper .box-2 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* About page  */
+    .cta-banner {
+        width: 100%;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        object-fit: cover;
+    }
+
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-2 h2 {
+        text-align: center;
+    }
+    .about-wrapper{
+        text-align: center;
+    }
+
+   .about-wrapper .left{
+    float: none;
+    text-align: center;
+   }
+   .about-wrapper .right{
+    float: none;
+    text-align: center;
+   }
+
+    /* contact page  */
+
+    .form-wrapper .company-address,
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+}
+
+
+
+@media(min-width:501px) and (max-width:780px) {
+    html {
+        font-size: 8px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.8rem;
+
+    }
+
+    /* navbar  */
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+
+    }
+
+    /* homepage  */
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .text-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .showcase {
+        padding: 2px;
+    }
+
+    .row1 {
+        margin-top: 10rem;
+    }
+
+
+
+    .box-wapper .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .box-wapper .box-1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .box-wapper .box-2 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* About page  */
+
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-2 h2 {
+        text-align: center;
+    }
+
+    /* contact page  */
+
+    .form-wrapper .company-address,
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+}
+
+@media (min-width:781px) and (max-width:1200px) {
+    html {
+        font-size: 53.50%;
+
+    }
+}
+
+
+@media(orientation:landscape) and (max-height:500px) {
+    .header {
+        height: 90vmax;
+    }
+}
+
+/*######### media queries ends  #########*/
